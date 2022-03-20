@@ -1,0 +1,14 @@
+.footer {
+  margin-bottom: 60px;
+  display: flex;
+  width: 100%;
+  z-index: 1;
+  flex-grow: 0;
+}
+
+@media screen and (max-width: 490px) {
+  .footer {
+    margin: 0 auto 30px;
+    max-width: 282px;
+  }
+}
