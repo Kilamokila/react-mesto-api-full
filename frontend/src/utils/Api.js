@@ -69,7 +69,7 @@ class Api {
 }
 
 export const api = new Api({
-    url: 'http://localhost:3000/',
+    url: 'https://dan2491.nomoredomains.work/',
     headers: {
         'Content-Type': 'application/json',
     }

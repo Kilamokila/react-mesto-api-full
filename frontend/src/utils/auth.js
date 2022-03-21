@@ -1,4 +1,4 @@
-export const BASE_URL = 'http://localhost:3000';
+export const BASE_URL = 'https://dan2491.nomoredomains.work';
 
 const checkRes = (res) => {
     return res.ok ? res.json() : Promise.reject(`Что-то пошло не так: ${res}`);
