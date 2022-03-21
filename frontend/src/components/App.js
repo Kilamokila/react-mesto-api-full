@@ -47,7 +47,7 @@ function App() {
         })
         .catch(err => console.log(err))
     }
-  }, [])
+  }, [isLoggedIn])
 
   function handleMobileMenu() {
     setMobileMenuActive(!isMobileMenuActive)
