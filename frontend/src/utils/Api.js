@@ -69,7 +69,7 @@ class Api {
 }
 
 export const api = new Api({
-    url: 'https://dan2491.nomoredomains.work/',
+    url: 'https://api.dan2491.nomoredomains.work/',
     headers: {
         'Content-Type': 'application/json',
     }
