@@ -28,7 +28,11 @@ app.use(cors({
 }));
 
 app.use(requestLogger);
-
+app.get('/crash-test', () => {
+  setTimeout(() => {
+    throw new Error('Сервер сейчас упадёт');
+  }, 0);
+});
 app.post('/signin', express.json(), celebrate(joiSignInScheme), login);
 app.post('/signup', express.json(), celebrate(joiSignUpScheme), createUser);
 app.use('/users', auth, userRouter);
