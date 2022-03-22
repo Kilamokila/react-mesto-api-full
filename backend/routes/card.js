@@ -9,7 +9,7 @@ const {
 cardRouter.get('/', getCards);
 cardRouter.delete('/:cardId', celebrate(joiCardIdScheme), deleteCard);
 cardRouter.post('/', express.json(), celebrate(joiCardScheme), addCard);
-cardRouter.put('/likes/:cardId', celebrate(joiCardIdScheme), putCardLike);
-cardRouter.delete('/likes/:cardId', celebrate(joiCardIdScheme), deleteCardLike);
+cardRouter.put('/:cardId/likes', celebrate(joiCardIdScheme), putCardLike);
+cardRouter.delete('/:cardId/likes', celebrate(joiCardIdScheme), deleteCardLike);
 
 module.exports = { cardRouter };
